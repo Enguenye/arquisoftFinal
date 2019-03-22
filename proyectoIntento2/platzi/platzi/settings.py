@@ -76,8 +76,13 @@ WSGI_APPLICATION = 'platzi.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db3.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'ATpos',
+        'USER': 'ATpos_user',
+        'PASSWORD': 'ATpos_password',
+        'HOST': '3.89.74.59',
+        'PORT': '5432'
+        ),
     }
 }
 
